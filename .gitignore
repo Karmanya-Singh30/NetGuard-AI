@@ -1,0 +1,32 @@
+# Dataset (download separately — see README)
+data/raw/
+data/processed/
+data/*.csv
+data/*.zip
+data/synthetic_fixture/
+data/scale_fixture/
+_transfer/
+archive/
+
+# Trained models: only the two final pipelines are committed (needed by the web app).
+# Regenerate everything with: python -m src.train
+models/*.joblib
+!models/final_pipeline.joblib
+!models/multiclass_pipeline.joblib
+models/candidates/
+
+# Python / tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+*.pcap
+*.pcapng
+.DS_Store
+Thumbs.db
+
+# Never commit archives (the dataset is 200+ MB)
+*.zip

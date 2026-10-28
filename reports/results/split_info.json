@@ -1,0 +1,48 @@
+{
+  "strategy": "stratified random split on the fine-grained label after de-duplication",
+  "test_size": 0.2,
+  "random_state": 42,
+  "train_rows": 1998484,
+  "test_rows": 499621,
+  "train_by_label": {
+    "BENIGN": 1658369,
+    "DoS Hulk": 138159,
+    "DDoS": 102410,
+    "PortScan": 72204,
+    "DoS GoldenEye": 8226,
+    "FTP-Patator": 4746,
+    "DoS slowloris": 4298,
+    "DoS Slowhttptest": 4182,
+    "SSH-Patator": 2575,
+    "Bot": 1562,
+    "Web Attack - Brute Force": 1176,
+    "Web Attack - XSS": 522,
+    "Infiltration": 29,
+    "Web Attack - Sql Injection": 17,
+    "Heartbleed": 9
+  },
+  "test_by_label": {
+    "BENIGN": 414592,
+    "DoS Hulk": 34540,
+    "DDoS": 25603,
+    "PortScan": 18051,
+    "DoS GoldenEye": 2056,
+    "FTP-Patator": 1187,
+    "DoS slowloris": 1074,
+    "DoS Slowhttptest": 1046,
+    "SSH-Patator": 644,
+    "Bot": 391,
+    "Web Attack - Brute Force": 294,
+    "Web Attack - XSS": 130,
+    "Infiltration": 7,
+    "Web Attack - Sql Injection": 4,
+    "Heartbleed": 2
+  },
+  "train_attack_share": 0.17018650136803698,
+  "test_attack_share": 0.17018700174732448,
+  "rare_classes_lt_threshold": [
+    "Infiltration",
+    "Web Attack - Sql Injection",
+    "Heartbleed"
+  ]
+}

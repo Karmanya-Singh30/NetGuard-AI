@@ -1,0 +1,109 @@
+{
+  "estimator": "Random Forest",
+  "imbalance_comparison": [
+    {
+      "strategy": "none",
+      "cv_macro_f1": 0.9396845468164724,
+      "cv_weighted_f1": 0.9956104220515613,
+      "cv_balanced_accuracy": 0.9301653431075413
+    },
+    {
+      "strategy": "class_weight",
+      "cv_macro_f1": 0.9396845468164724,
+      "cv_weighted_f1": 0.9956104220515613,
+      "cv_balanced_accuracy": 0.9301653431075413
+    },
+    {
+      "strategy": "smote_in_fold",
+      "cv_macro_f1": 0.9538688457742758,
+      "cv_weighted_f1": 0.993575429280081,
+      "cv_balanced_accuracy": 0.9687921321568932
+    }
+  ],
+  "chosen_strategy": "smote_in_fold",
+  "smote_note": "SMOTE applied inside each training fold only (k_neighbors=5); classes below 20,000 rows are topped up to 20,000",
+  "selection_rule": "highest CV macro-F1 on training subsample",
+  "fit_seconds": 20.5,
+  "fit_rows": 499995,
+  "test_report": {
+    "BENIGN": {
+      "precision": 0.999683661222903,
+      "recall": 0.9985286739734486,
+      "f1-score": 0.9991058338009303,
+      "support": 414592.0
+    },
+    "DoS": {
+      "precision": 0.9960283687943262,
+      "recall": 0.9975462341150946,
+      "f1-score": 0.9967867236195171,
+      "support": 38716.0
+    },
+    "DDoS": {
+      "precision": 0.9995701277892844,
+      "recall": 0.9990235519275085,
+      "f1-score": 0.9992967651195499,
+      "support": 25603.0
+    },
+    "PortScan": {
+      "precision": 0.9952562193171163,
+      "recall": 0.999556811256994,
+      "f1-score": 0.9974018794914318,
+      "support": 18051.0
+    },
+    "BruteForce": {
+      "precision": 0.9956355701036552,
+      "recall": 0.9967231021299836,
+      "f1-score": 0.99617903930131,
+      "support": 1831.0
+    },
+    "WebAttack": {
+      "precision": 0.9815668202764977,
+      "recall": 0.9953271028037384,
+      "f1-score": 0.988399071925754,
+      "support": 428.0
+    },
+    "Bot": {
+      "precision": 0.518918918918919,
+      "recall": 0.9820971867007673,
+      "f1-score": 0.6790450928381963,
+      "support": 391.0
+    },
+    "Infiltration": {
+      "precision": 0.7142857142857143,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.7142857142857143,
+      "support": 7.0
+    },
+    "Heartbleed": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
+    },
+    "accuracy": 0.9984868530346003,
+    "macro avg": {
+      "precision": 0.9112161556342685,
+      "recall": 0.909232041910361,
+      "f1-score": 0.8930185318943411,
+      "support": 499621.0
+    },
+    "weighted avg": {
+      "precision": 0.9988240354626501,
+      "recall": 0.9984868530346003,
+      "f1-score": 0.9985986490385355,
+      "support": 499621.0
+    }
+  },
+  "labels": [
+    "BENIGN",
+    "DoS",
+    "DDoS",
+    "PortScan",
+    "BruteForce",
+    "WebAttack",
+    "Bot",
+    "Infiltration",
+    "Heartbleed"
+  ],
+  "rare_classes_note": "Classes with < 100 training rows are kept but their per-class scores rest on very few test rows."
+}

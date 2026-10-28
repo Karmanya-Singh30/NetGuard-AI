@@ -1,0 +1,97 @@
+{
+  "project": "NetGuard AI",
+  "created_utc": "2026-10-28T20:29:21+00:00",
+  "final_model": "Random Forest",
+  "best_params": {
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "max_depth": null,
+    "class_weight": "balanced_subsample"
+  },
+  "decision_threshold": 0.5,
+  "task": "binary: ATTACK (1) vs BENIGN (0)",
+  "selection": {
+    "final_model": "Random Forest",
+    "rule": "highest mean CV F1 (ATTACK) on the training subsample; models within 0.001 are tie-broken by higher CV specificity, then faster prediction. Test-set results were NOT used for this choice.",
+    "cv_f1_by_model": {
+      "Logistic Regression": 0.8545269617993854,
+      "Decision Tree": 0.9952324406896548,
+      "Random Forest": 0.9956709511227171,
+      "HistGradientBoosting": 0.9962540621107099
+    }
+  },
+  "feature_set": "top30_rf_importance",
+  "n_features": 30,
+  "dataset": {
+    "name": "CIC-IDS2017 (MachineLearningCSV)",
+    "source": "https://www.unb.ca/cic/datasets/ids-2017.html",
+    "files": [
+      "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+      "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+      "Monday-WorkingHours.pcap_ISCX.csv",
+      "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+      "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+      "Tuesday-WorkingHours.pcap_ISCX.csv",
+      "Wednesday-workingHours.pcap_ISCX.csv"
+    ],
+    "rows_raw": 2830743,
+    "rows_after_cleaning": 2498105
+  },
+  "split": {
+    "strategy": "stratified random split on the fine-grained label after de-duplication",
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_rows": 1998484,
+    "test_rows": 499621
+  },
+  "rows_used_for_fitting": 1998484,
+  "rows_used_for_tuning": 199995,
+  "max_train_rows_arg": null,
+  "fit_rows_policy": "all training rows (requested)",
+  "ram_gb": 23.7,
+  "quick_mode": false,
+  "data_path_arg": null,
+  "reportable": true,
+  "test_metrics": {
+    "n": 499621,
+    "tp": 84830,
+    "tn": 414284,
+    "fp": 308,
+    "fn": 199,
+    "accuracy": 0.9989852308049502,
+    "precision": 0.9963823439592191,
+    "recall": 0.9976596220113138,
+    "f1": 0.9970205739068092,
+    "specificity": 0.9992571009570855,
+    "fpr": 0.0007428990429144798,
+    "fnr": 0.002340377988686213,
+    "roc_auc": 0.9999637003987536,
+    "pr_auc": 0.9998528720534138
+  },
+  "multiclass_available": true,
+  "holdout_day": {
+    "n": 615293,
+    "tp": 22338,
+    "tn": 394963,
+    "fp": 109,
+    "fn": 197883,
+    "accuracy": 0.6782150942721598,
+    "precision": 0.995144117253976,
+    "recall": 0.10143446810249704,
+    "f1": 0.1841033840473404,
+    "specificity": 0.999724100923376,
+    "fpr": 0.0002758990766240078,
+    "fnr": 0.898565531897503,
+    "roc_auc": 0.7679656106487565,
+    "pr_auc": 0.722785527459435
+  },
+  "environment": {
+    "python": "3.12.4",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "total_runtime_minutes": 9.7
+}

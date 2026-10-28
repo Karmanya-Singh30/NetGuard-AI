@@ -1,0 +1,70 @@
+{
+  "infinite_values_replaced_with_nan": {
+    "Flow Bytes/s": 1509,
+    "Flow Packets/s": 2867
+  },
+  "missing_after_inf_replacement": {
+    "Flow Bytes/s": 1561,
+    "Flow Packets/s": 1561
+  },
+  "deduplication": {
+    "rows_before": 2830743,
+    "exact_duplicates_removed": 331200,
+    "conflicting_label_rows_removed": 1438,
+    "rows_after": 2498105,
+    "rows_before_by_label": {
+      "BENIGN": 2273097,
+      "DoS Hulk": 231073,
+      "PortScan": 158930,
+      "DDoS": 128027,
+      "DoS GoldenEye": 10293,
+      "FTP-Patator": 7938,
+      "SSH-Patator": 5897,
+      "DoS slowloris": 5796,
+      "DoS Slowhttptest": 5499,
+      "Bot": 1966,
+      "Web Attack - Brute Force": 1507,
+      "Web Attack - XSS": 652,
+      "Infiltration": 36,
+      "Web Attack - Sql Injection": 21,
+      "Heartbleed": 11
+    },
+    "exact_duplicates_removed_by_label": {
+      "BENIGN": 199417,
+      "PortScan": 68111,
+      "DoS Hulk": 58224,
+      "SSH-Patator": 2678,
+      "FTP-Patator": 2005,
+      "DoS slowloris": 422,
+      "DoS Slowhttptest": 271,
+      "Web Attack - Brute Force": 37,
+      "Bot": 13,
+      "DDoS": 11,
+      "DoS GoldenEye": 11
+    },
+    "conflicting_removed_by_label": {
+      "BENIGN": 719,
+      "PortScan": 564,
+      "DoS Hulk": 150,
+      "DDoS": 3,
+      "DoS slowloris": 2
+    },
+    "rows_after_by_label": {
+      "BENIGN": 2072961,
+      "DoS Hulk": 172699,
+      "DDoS": 128013,
+      "PortScan": 90255,
+      "DoS GoldenEye": 10282,
+      "FTP-Patator": 5933,
+      "DoS slowloris": 5372,
+      "DoS Slowhttptest": 5228,
+      "SSH-Patator": 3219,
+      "Bot": 1953,
+      "Web Attack - Brute Force": 1470,
+      "Web Attack - XSS": 652,
+      "Infiltration": 36,
+      "Web Attack - Sql Injection": 21,
+      "Heartbleed": 11
+    }
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "false_negatives": 199,
+  "false_positives": 308,
+  "false_negatives_by_label": {
+    "DoS Hulk": 61,
+    "Bot": 59,
+    "DDoS": 20,
+    "SSH-Patator": 11,
+    "DoS GoldenEye": 10,
+    "DoS Slowhttptest": 8,
+    "Web Attack - Brute Force": 6,
+    "Infiltration": 5,
+    "Web Attack - Sql Injection": 4,
+    "DoS slowloris": 4,
+    "Web Attack - XSS": 4,
+    "PortScan": 3,
+    "FTP-Patator": 3,
+    "Heartbleed": 1
+  },
+  "fn_p_attack_quantiles": {
+    "0.1": 0.1260217427312627,
+    "0.5": 0.35837464470437747,
+    "0.9": 0.4764149662608368
+  },
+  "fp_p_attack_quantiles": {
+    "0.1": 0.5389692761700939,
+    "0.5": 0.791220993407602,
+    "0.9": 0.9977129655841539
+  },
+  "median_top_features": {
+    "false_positive": {
+      "Packet Length Variance": 5.333333492279053,
+      "Bwd Packet Length Std": 0.0,
+      "Average Packet Size": 3.0,
+      "Packet Length Std": 2.309401035308838,
+      "Max Packet Length": 6.0,
+      "Avg Bwd Segment Size": 6.0,
+      "Packet Length Mean": 2.5714285373687744,
+      "Fwd Packet Length Max": 0.0
+    },
+    "true_negative": {
+      "Packet Length Variance": 945.0,
+      "Bwd Packet Length Std": 0.0,
+      "Average Packet Size": 78.5,
+      "Packet Length Std": 30.74085235595703,
+      "Max Packet Length": 99.0,
+      "Avg Bwd Segment Size": 84.14286041259766,
+      "Packet Length Mean": 61.66666793823242,
+      "Fwd Packet Length Max": 42.0
+    },
+    "false_negative": {
+      "Packet Length Variance": 0.0,
+      "Bwd Packet Length Std": 0.0,
+      "Average Packet Size": 3.0,
+      "Packet Length Std": 0.0,
+      "Max Packet Length": 6.0,
+      "Avg Bwd Segment Size": 0.0,
+      "Packet Length Mean": 2.5714285373687744,
+      "Fwd Packet Length Max": 0.0
+    },
+    "true_positive": {
+      "Packet Length Variance": 2131448.5,
+      "Bwd Packet Length Std": 1757.5789794921875,
+      "Average Packet Size": 833.0714111328125,
+      "Packet Length Std": 1459.9481201171875,
+      "Max Packet Length": 4344.0,
+      "Avg Bwd Segment Size": 1656.4285888671875,
+      "Packet Length Mean": 777.5333251953125,
+      "Fwd Packet Length Max": 20.0
+    }
+  },
+  "detection_by_family": [
+    {
+      "family": "BENIGN",
+      "n": 414592,
+      "flagged_attack": 308,
+      "flagged_rate": 0.0007428990429144798,
+      "missed": 0
+    },
+    {
+      "family": "DoS",
+      "n": 38716,
+      "flagged_attack": 38633,
+      "flagged_rate": 0.9978561834900299,
+      "missed": 83
+    },
+    {
+      "family": "DDoS",
+      "n": 25603,
+      "flagged_attack": 25583,
+      "flagged_rate": 0.9992188415420068,
+      "missed": 20
+    },
+    {
+      "family": "PortScan",
+      "n": 18051,
+      "flagged_attack": 18048,
+      "flagged_rate": 0.9998338042213728,
+      "missed": 3
+    },
+    {
+      "family": "BruteForce",
+      "n": 1831,
+      "flagged_attack": 1817,
+      "flagged_rate": 0.9923539049699618,
+      "missed": 14
+    },
+    {
+      "family": "WebAttack",
+      "n": 428,
+      "flagged_attack": 414,
+      "flagged_rate": 0.9672897196261683,
+      "missed": 14
+    },
+    {
+      "family": "Bot",
+      "n": 391,
+      "flagged_attack": 332,
+      "flagged_rate": 0.8491048593350383,
+      "missed": 59
+    },
+    {
+      "family": "Infiltration",
+      "n": 7,
+      "flagged_attack": 2,
+      "flagged_rate": 0.2857142857142857,
+      "missed": 5
+    },
+    {
+      "family": "Heartbleed",
+      "n": 2,
+      "flagged_attack": 1,
+      "flagged_rate": 0.5,
+      "missed": 1
+    }
+  ],
+  "detection_by_label": [
+    {
+      "family": "BENIGN",
+      "n": 414592,
+      "flagged_attack": 308,
+      "flagged_rate": 0.0007428990429144798,
+      "missed": 0
+    },
+    {
+      "family": "DoS Hulk",
+      "n": 34540,
+      "flagged_attack": 34479,
+      "flagged_rate": 0.9982339316734221,
+      "missed": 61
+    },
+    {
+      "family": "DDoS",
+      "n": 25603,
+      "flagged_attack": 25583,
+      "flagged_rate": 0.9992188415420068,
+      "missed": 20
+    },
+    {
+      "family": "PortScan",
+      "n": 18051,
+      "flagged_attack": 18048,
+      "flagged_rate": 0.9998338042213728,
+      "missed": 3
+    },
+    {
+      "family": "DoS GoldenEye",
+      "n": 2056,
+      "flagged_attack": 2046,
+      "flagged_rate": 0.995136186770428,
+      "missed": 10
+    },
+    {
+      "family": "FTP-Patator",
+      "n": 1187,
+      "flagged_attack": 1184,
+      "flagged_rate": 0.9974726200505476,
+      "missed": 3
+    },
+    {
+      "family": "DoS slowloris",
+      "n": 1074,
+      "flagged_attack": 1070,
+      "flagged_rate": 0.9962756052141527,
+      "missed": 4
+    },
+    {
+      "family": "DoS Slowhttptest",
+      "n": 1046,
+      "flagged_attack": 1038,
+      "flagged_rate": 0.9923518164435946,
+      "missed": 8
+    },
+    {
+      "family": "SSH-Patator",
+      "n": 644,
+      "flagged_attack": 633,
+      "flagged_rate": 0.9829192546583851,
+      "missed": 11
+    },
+    {
+      "family": "Bot",
+      "n": 391,
+      "flagged_attack": 332,
+      "flagged_rate": 0.8491048593350383,
+      "missed": 59
+    },
+    {
+      "family": "Web Attack - Brute Force",
+      "n": 294,
+      "flagged_attack": 288,
+      "flagged_rate": 0.9795918367346939,
+      "missed": 6
+    },
+    {
+      "family": "Web Attack - XSS",
+      "n": 130,
+      "flagged_attack": 126,
+      "flagged_rate": 0.9692307692307692,
+      "missed": 4
+    },
+    {
+      "family": "Infiltration",
+      "n": 7,
+      "flagged_attack": 2,
+      "flagged_rate": 0.2857142857142857,
+      "missed": 5
+    },
+    {
+      "family": "Web Attack - Sql Injection",
+      "n": 4,
+      "flagged_attack": 0,
+      "flagged_rate": 0.0,
+      "missed": 4
+    },
+    {
+      "family": "Heartbleed",
+      "n": 2,
+      "flagged_attack": 1,
+      "flagged_rate": 0.5,
+      "missed": 1
+    }
+  ],
+  "threshold_sweep": [
+    {
+      "threshold": 0.05,
+      "precision": 0.9631895584786377,
+      "recall": 0.9998235895988428,
+      "fpr": 0.007836620098795925
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.9818893727116276,
+      "recall": 0.9997883075186113,
+      "fpr": 0.003782031491200988
+    },
+    {
+      "threshold": 0.15,
+      "precision": 0.9878323726292302,
+      "recall": 0.9996707005845065,
+      "fpr": 0.0025253743439333128
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.9909632583575285,
+      "recall": 0.9994942901833492,
+      "fpr": 0.0018693076566841619
+    },
+    {
+      "threshold": 0.25,
+      "precision": 0.9928257618246401,
+      "recall": 0.9993061190887814,
+      "fpr": 0.0014809740660697746
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.9941253569255254,
+      "recall": 0.9990709052205718,
+      "fpr": 0.0012108289595554184
+    },
+    {
+      "threshold": 0.35,
+      "precision": 0.9948812256946071,
+      "recall": 0.9988944948194145,
+      "fpr": 0.001054048317381908
+    },
+    {
+      "threshold": 0.39999999999999997,
+      "precision": 0.9955329401695372,
+      "recall": 0.9986004774841525,
+      "fpr": 0.0009189757641247299
+    },
+    {
+      "threshold": 0.44999999999999996,
+      "precision": 0.9958232140133516,
+      "recall": 0.9982123746016065,
+      "fpr": 0.0008586755171349182
+    },
+    {
+      "threshold": 0.49999999999999994,
+      "precision": 0.9963823439592191,
+      "recall": 0.9976596220113138,
+      "fpr": 0.0007428990429144798
+    },
+    {
+      "threshold": 0.5499999999999999,
+      "precision": 0.9968021444443138,
+      "recall": 0.997130390807842,
+      "fpr": 0.000656066687249151
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.9973280600774509,
+      "recall": 0.9964835526702654,
+      "fpr": 0.00054752624266749
+    },
+    {
+      "threshold": 0.65,
+      "precision": 0.9976901229184589,
+      "recall": 0.9956250220513001,
+      "fpr": 0.0004727539364001235
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.9978883291847063,
+      "recall": 0.9948135342059767,
+      "fpr": 0.0004317497684470516
+    },
+    {
+      "threshold": 0.75,
+      "precision": 0.9981102882991414,
+      "recall": 0.9938844394265486,
+      "fpr": 0.0003859215807347947
+    },
+    {
+      "threshold": 0.7999999999999999,
+      "precision": 0.9981904626738575,
+      "recall": 0.9925907631513954,
+      "fpr": 0.00036903751157764744
+    },
+    {
+      "threshold": 0.85,
+      "precision": 0.9982702241599924,
+      "recall": 0.9909325053805172,
+      "fpr": 0.00035215344242050015
+    },
+    {
+      "threshold": 0.9,
+      "precision": 0.9983250377163493,
+      "recall": 0.9883686742170318,
+      "fpr": 0.0003400933930225378
+    },
+    {
+      "threshold": 0.95,
+      "precision": 0.9985785953177257,
+      "recall": 0.9832057298098296,
+      "fpr": 0.00028702917567150355
+    }
+  ]
+}

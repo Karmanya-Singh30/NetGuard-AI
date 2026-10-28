@@ -1,0 +1,67 @@
+{
+  "train_files": [
+    "Monday-WorkingHours.pcap_ISCX.csv",
+    "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+    "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+    "Tuesday-WorkingHours.pcap_ISCX.csv",
+    "Wednesday-workingHours.pcap_ISCX.csv"
+  ],
+  "test_files": [
+    "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+    "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+    "Friday-WorkingHours-Morning.pcap_ISCX.csv"
+  ],
+  "train_rows": 1882812,
+  "test_rows": 615293,
+  "metrics": {
+    "n": 615293,
+    "tp": 22338,
+    "tn": 394963,
+    "fp": 109,
+    "fn": 197883,
+    "accuracy": 0.6782150942721598,
+    "precision": 0.995144117253976,
+    "recall": 0.10143446810249704,
+    "f1": 0.1841033840473404,
+    "specificity": 0.999724100923376,
+    "fpr": 0.0002758990766240078,
+    "fnr": 0.898565531897503,
+    "roc_auc": 0.7679656106487565,
+    "pr_auc": 0.722785527459435
+  },
+  "detection_by_label": [
+    {
+      "family": "BENIGN",
+      "n": 395072,
+      "flagged_attack": 109,
+      "flagged_rate": 0.0002758990766240078,
+      "missed": 0
+    },
+    {
+      "family": "DDoS",
+      "n": 128013,
+      "flagged_attack": 22271,
+      "flagged_rate": 0.173974518212994,
+      "missed": 105742
+    },
+    {
+      "family": "PortScan",
+      "n": 90255,
+      "flagged_attack": 67,
+      "flagged_rate": 0.0007423411445349288,
+      "missed": 90188
+    },
+    {
+      "family": "Bot",
+      "n": 1953,
+      "flagged_attack": 0,
+      "flagged_rate": 0.0,
+      "missed": 1953
+    }
+  ],
+  "test_labels_unseen_in_training": [
+    "Bot",
+    "DDoS",
+    "PortScan"
+  ]
+}

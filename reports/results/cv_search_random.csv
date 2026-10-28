@@ -1,0 +1,7 @@
+params,mean_test_f1,std_test_f1,mean_test_recall,mean_test_specificity,mean_train_f1,mean_fit_time
+"{'model__min_samples_leaf': 10, 'model__max_features': 0.3, 'model__max_depth': None, 'model__class_weight': 'balanced_subsample'}",0.995258907660253,0.0004168236820941959,0.9952176883423389,0.9985035466603381,0.9966380764285804,4.003245910008748
+"{'model__min_samples_leaf': 5, 'model__max_features': 'sqrt', 'model__max_depth': None, 'model__class_weight': None}",0.9944392478277972,0.0002719130298489817,0.992215804401383,0.9989452311262296,0.9957072173667544,2.477010170618693
+"{'model__min_samples_leaf': 10, 'model__max_features': 'sqrt', 'model__max_depth': 30, 'model__class_weight': 'balanced_subsample'}",0.9941361364469768,0.00034315945512246245,0.9932716394426847,0.9984112543838831,0.9953411502252122,2.7289391358693442
+"{'model__min_samples_leaf': 2, 'model__max_features': 'sqrt', 'model__max_depth': None, 'model__class_weight': 'balanced_subsample'}",0.9956709511227171,0.0002933937446284859,0.9951555803987331,0.9987870157951639,0.9984019088437467,2.776522636413574
+"{'model__min_samples_leaf': 5, 'model__max_features': 0.3, 'model__max_depth': None, 'model__class_weight': None}",0.9952213979135228,0.00035978996379499374,0.9938306109351386,0.9989254542098464,0.9965340560396525,4.358843962351481
+"{'model__min_samples_leaf': 5, 'model__max_features': 'sqrt', 'model__max_depth': None, 'model__class_weight': 'balanced_subsample'}",0.9952053672113811,0.0004425854343054461,0.9947829327370971,0.9986090235477151,0.9969731887719303,3.091257095336914

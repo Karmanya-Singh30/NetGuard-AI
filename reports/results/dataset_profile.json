@@ -1,0 +1,716 @@
+{
+  "files": [
+    "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+    "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+    "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+    "Monday-WorkingHours.pcap_ISCX.csv",
+    "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+    "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+    "Tuesday-WorkingHours.pcap_ISCX.csv",
+    "Wednesday-workingHours.pcap_ISCX.csv"
+  ],
+  "rows_per_file": {
+    "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": 225745,
+    "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": 286467,
+    "Friday-WorkingHours-Morning.pcap_ISCX.csv": 191033,
+    "Monday-WorkingHours.pcap_ISCX.csv": 529918,
+    "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": 288602,
+    "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": 170366,
+    "Tuesday-WorkingHours.pcap_ISCX.csv": 445909,
+    "Wednesday-workingHours.pcap_ISCX.csv": 692703
+  },
+  "n_rows": 2830743,
+  "n_columns_after_tidy": 78,
+  "n_numeric_features": 77,
+  "non_numeric_columns": [
+    "Label"
+  ],
+  "duplicate_columns_dropped": [
+    "Fwd Header Length.1"
+  ],
+  "values_coerced_to_nan_non_numeric": {},
+  "label_spelling_variants": {
+    "BENIGN": "BENIGN",
+    "DDoS": "DDoS",
+    "PortScan": "PortScan",
+    "Bot": "Bot",
+    "Infiltration": "Infiltration",
+    "Web Attack \u00ef\u00bf\u00bd Brute Force": "Web Attack - Brute Force",
+    "Web Attack \u00ef\u00bf\u00bd XSS": "Web Attack - XSS",
+    "Web Attack \u00ef\u00bf\u00bd Sql Injection": "Web Attack - Sql Injection",
+    "FTP-Patator": "FTP-Patator",
+    "SSH-Patator": "SSH-Patator",
+    "DoS slowloris": "DoS slowloris",
+    "DoS Slowhttptest": "DoS Slowhttptest",
+    "DoS Hulk": "DoS Hulk",
+    "DoS GoldenEye": "DoS GoldenEye",
+    "Heartbleed": "Heartbleed"
+  },
+  "memory_mb_float32": 872.7,
+  "class_distribution": {
+    "BENIGN": 2273097,
+    "DoS Hulk": 231073,
+    "PortScan": 158930,
+    "DDoS": 128027,
+    "DoS GoldenEye": 10293,
+    "FTP-Patator": 7938,
+    "SSH-Patator": 5897,
+    "DoS slowloris": 5796,
+    "DoS Slowhttptest": 5499,
+    "Bot": 1966,
+    "Web Attack - Brute Force": 1507,
+    "Web Attack - XSS": 652,
+    "Infiltration": 36,
+    "Web Attack - Sql Injection": 21,
+    "Heartbleed": 11
+  },
+  "class_distribution_pct": {
+    "BENIGN": 80.3004,
+    "DoS Hulk": 8.163,
+    "PortScan": 5.6144,
+    "DDoS": 4.5227,
+    "DoS GoldenEye": 0.3636,
+    "FTP-Patator": 0.2804,
+    "SSH-Patator": 0.2083,
+    "DoS slowloris": 0.2048,
+    "DoS Slowhttptest": 0.1943,
+    "Bot": 0.0695,
+    "Web Attack - Brute Force": 0.0532,
+    "Web Attack - XSS": 0.023,
+    "Infiltration": 0.0013,
+    "Web Attack - Sql Injection": 0.0007,
+    "Heartbleed": 0.0004
+  },
+  "binary_distribution": {
+    "BENIGN": 2273097,
+    "ATTACK": 557646
+  },
+  "imbalance_ratio_largest_to_smallest": 206645.18181818182,
+  "labels_per_file": {
+    "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "BENIGN": 97718,
+      "DDoS": 128027
+    },
+    "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "BENIGN": 127537,
+      "PortScan": 158930
+    },
+    "Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "BENIGN": 189067,
+      "Bot": 1966
+    },
+    "Monday-WorkingHours.pcap_ISCX.csv": {
+      "BENIGN": 529918
+    },
+    "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "BENIGN": 288566,
+      "Infiltration": 36
+    },
+    "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "BENIGN": 168186,
+      "Web Attack - Brute Force": 1507,
+      "Web Attack - Sql Injection": 21,
+      "Web Attack - XSS": 652
+    },
+    "Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "BENIGN": 432074,
+      "FTP-Patator": 7938,
+      "SSH-Patator": 5897
+    },
+    "Wednesday-workingHours.pcap_ISCX.csv": {
+      "BENIGN": 440031,
+      "DoS GoldenEye": 10293,
+      "DoS Hulk": 231073,
+      "DoS Slowhttptest": 5499,
+      "DoS slowloris": 5796,
+      "Heartbleed": 11
+    }
+  },
+  "missing_values": {
+    "Flow Bytes/s": 1358
+  },
+  "missing_pct": {
+    "Flow Bytes/s": 0.048
+  },
+  "infinite_values": {
+    "Flow Bytes/s": 1509,
+    "Flow Packets/s": 2867
+  },
+  "duplicate_rows_including_label": 331200,
+  "duplicate_rows_features_only": 331919,
+  "constant_columns": [
+    "Bwd PSH Flags",
+    "Bwd URG Flags",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk",
+    "Fwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd Avg Bulk Rate"
+  ],
+  "near_constant_columns_top_value_ge_99.9pct": [
+    "CWE Flag Count",
+    "ECE Flag Count",
+    "Fwd URG Flags",
+    "RST Flag Count"
+  ],
+  "columns_with_negative_values": {
+    "Flow Duration": 115,
+    "Flow Bytes/s": 85,
+    "Flow Packets/s": 115,
+    "Flow IAT Mean": 115,
+    "Flow IAT Max": 115,
+    "Flow IAT Min": 2891,
+    "Fwd IAT Min": 17,
+    "Fwd Header Length": 35,
+    "Bwd Header Length": 22,
+    "Init_Win_bytes_forward": 1001189,
+    "Init_Win_bytes_backward": 1441552,
+    "min_seg_size_forward": 35
+  },
+  "identifier_review": {
+    "Destination Port": "Present. Not an identifier of a flow, but in this lab dataset attacks target fixed ports; excluded from model inputs by default to avoid a testbed-specific shortcut (config.EXCLUDED_FEATURES).",
+    "IPs/Flow ID/Timestamp": "Not present in the MachineLearningCSV release"
+  },
+  "describe": {
+    "Destination Port": {
+      "mean": 8071.4819,
+      "std": 18283.6328,
+      "min": 0.0,
+      "50%": 80.0,
+      "max": 65535.0
+    },
+    "Flow Duration": {
+      "mean": 14785665.0,
+      "std": 33653744.0,
+      "min": -13.0,
+      "50%": 31316.0,
+      "max": 120000000.0
+    },
+    "Total Fwd Packets": {
+      "mean": 9.3612,
+      "std": 749.6728,
+      "min": 1.0,
+      "50%": 2.0,
+      "max": 219759.0
+    },
+    "Total Backward Packets": {
+      "mean": 10.3938,
+      "std": 997.3883,
+      "min": 0.0,
+      "50%": 2.0,
+      "max": 291922.0
+    },
+    "Total Length of Fwd Packets": {
+      "mean": 549.3024,
+      "std": 9993.5889,
+      "min": 0.0,
+      "50%": 62.0,
+      "max": 12900000.0
+    },
+    "Total Length of Bwd Packets": {
+      "mean": 16162.6426,
+      "std": 2263088.0,
+      "min": 0.0,
+      "50%": 123.0,
+      "max": 655453056.0
+    },
+    "Fwd Packet Length Max": {
+      "mean": 207.5999,
+      "std": 717.1848,
+      "min": 0.0,
+      "50%": 37.0,
+      "max": 24820.0
+    },
+    "Fwd Packet Length Min": {
+      "mean": 18.7137,
+      "std": 60.3393,
+      "min": 0.0,
+      "50%": 2.0,
+      "max": 2325.0
+    },
+    "Fwd Packet Length Mean": {
+      "mean": 58.2019,
+      "std": 186.0912,
+      "min": 0.0,
+      "50%": 34.0,
+      "max": 5940.8569
+    },
+    "Fwd Packet Length Std": {
+      "mean": 68.9101,
+      "std": 281.1871,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 7125.5967
+    },
+    "Bwd Packet Length Max": {
+      "mean": 870.8494,
+      "std": 1946.3674,
+      "min": 0.0,
+      "50%": 79.0,
+      "max": 19530.0
+    },
+    "Bwd Packet Length Min": {
+      "mean": 41.0496,
+      "std": 68.8626,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 2896.0
+    },
+    "Bwd Packet Length Mean": {
+      "mean": 305.9493,
+      "std": 605.2568,
+      "min": 0.0,
+      "50%": 72.0,
+      "max": 5800.5
+    },
+    "Bwd Packet Length Std": {
+      "mean": 335.3257,
+      "std": 839.6932,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 8194.6602
+    },
+    "Flow Bytes/s": {
+      "mean": null,
+      "std": null,
+      "min": -261000000.0,
+      "50%": 4595.5493,
+      "max": null
+    },
+    "Flow Packets/s": {
+      "mean": null,
+      "std": null,
+      "min": -2000000.0,
+      "50%": 110.6684,
+      "max": null
+    },
+    "Flow IAT Mean": {
+      "mean": 1298448.625,
+      "std": 4507944.0,
+      "min": -13.0,
+      "50%": 11438.8418,
+      "max": 120000000.0
+    },
+    "Flow IAT Std": {
+      "mean": 2919271.0,
+      "std": 8045870.0,
+      "min": 0.0,
+      "50%": 137.1787,
+      "max": 84800264.0
+    },
+    "Flow IAT Max": {
+      "mean": 9182476.0,
+      "std": 24459540.0,
+      "min": -13.0,
+      "50%": 30865.0,
+      "max": 120000000.0
+    },
+    "Flow IAT Min": {
+      "mean": 162379.5625,
+      "std": 2950281.75,
+      "min": -14.0,
+      "50%": 4.0,
+      "max": 120000000.0
+    },
+    "Fwd IAT Total": {
+      "mean": 14482962.0,
+      "std": 33575812.0,
+      "min": 0.0,
+      "50%": 43.0,
+      "max": 120000000.0
+    },
+    "Fwd IAT Mean": {
+      "mean": 2610193.0,
+      "std": 9525722.0,
+      "min": 0.0,
+      "50%": 26.0,
+      "max": 120000000.0
+    },
+    "Fwd IAT Std": {
+      "mean": 3266957.25,
+      "std": 9639056.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 84602928.0
+    },
+    "Fwd IAT Max": {
+      "mean": 9042939.0,
+      "std": 24529158.0,
+      "min": 0.0,
+      "50%": 43.0,
+      "max": 120000000.0
+    },
+    "Fwd IAT Min": {
+      "mean": 1021892.875,
+      "std": 8591436.0,
+      "min": -12.0,
+      "50%": 3.0,
+      "max": 120000000.0
+    },
+    "Bwd IAT Total": {
+      "mean": 9893830.0,
+      "std": 28736614.0,
+      "min": 0.0,
+      "50%": 3.0,
+      "max": 120000000.0
+    },
+    "Bwd IAT Mean": {
+      "mean": 1805783.875,
+      "std": 8887197.0,
+      "min": 0.0,
+      "50%": 3.0,
+      "max": 120000000.0
+    },
+    "Bwd IAT Std": {
+      "mean": 1485973.25,
+      "std": 6278468.5,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 84418016.0
+    },
+    "Bwd IAT Max": {
+      "mean": 4684692.5,
+      "std": 17160950.0,
+      "min": 0.0,
+      "50%": 3.0,
+      "max": 120000000.0
+    },
+    "Bwd IAT Min": {
+      "mean": 967261.375,
+      "std": 8308983.0,
+      "min": 0.0,
+      "50%": 1.0,
+      "max": 120000000.0
+    },
+    "Fwd PSH Flags": {
+      "mean": 0.0464,
+      "std": 0.2105,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "Bwd PSH Flags": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 0.0
+    },
+    "Fwd URG Flags": {
+      "mean": 0.0001,
+      "std": 0.0105,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "Bwd URG Flags": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 0.0
+    },
+    "Fwd Header Length": {
+      "mean": -25997.3926,
+      "std": 21052858.0,
+      "min": -32212234240.0,
+      "50%": 64.0,
+      "max": 4644908.0
+    },
+    "Bwd Header Length": {
+      "mean": -2273.2751,
+      "std": 1452209.0,
+      "min": -1073741312.0,
+      "50%": 40.0,
+      "max": 5838440.0
+    },
+    "Fwd Packets/s": {
+      "mean": 63865.3516,
+      "std": 247537.1406,
+      "min": 0.0,
+      "50%": 61.3252,
+      "max": 3000000.0
+    },
+    "Bwd Packets/s": {
+      "mean": 6995.1914,
+      "std": 38151.6953,
+      "min": 0.0,
+      "50%": 19.8279,
+      "max": 2000000.0
+    },
+    "Min Packet Length": {
+      "mean": 16.4345,
+      "std": 25.2377,
+      "min": 0.0,
+      "50%": 2.0,
+      "max": 1448.0
+    },
+    "Max Packet Length": {
+      "mean": 950.4024,
+      "std": 2028.2291,
+      "min": 0.0,
+      "50%": 87.0,
+      "max": 24820.0
+    },
+    "Packet Length Mean": {
+      "mean": 171.9444,
+      "std": 305.4915,
+      "min": 0.0,
+      "50%": 57.2,
+      "max": 3337.1428
+    },
+    "Packet Length Std": {
+      "mean": 294.9756,
+      "std": 631.8001,
+      "min": 0.0,
+      "50%": 25.9808,
+      "max": 4731.5225
+    },
+    "Packet Length Variance": {
+      "mean": 486154.75,
+      "std": 1647489.875,
+      "min": 0.0,
+      "50%": 675.0,
+      "max": 22400000.0
+    },
+    "FIN Flag Count": {
+      "mean": 0.0354,
+      "std": 0.1847,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "SYN Flag Count": {
+      "mean": 0.0464,
+      "std": 0.2105,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "RST Flag Count": {
+      "mean": 0.0002,
+      "std": 0.0156,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "PSH Flag Count": {
+      "mean": 0.2981,
+      "std": 0.4574,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "ACK Flag Count": {
+      "mean": 0.3158,
+      "std": 0.4649,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "URG Flag Count": {
+      "mean": 0.0948,
+      "std": 0.293,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "CWE Flag Count": {
+      "mean": 0.0001,
+      "std": 0.0105,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "ECE Flag Count": {
+      "mean": 0.0002,
+      "std": 0.0156,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 1.0
+    },
+    "Down/Up Ratio": {
+      "mean": 0.6835,
+      "std": 0.6805,
+      "min": 0.0,
+      "50%": 1.0,
+      "max": 156.0
+    },
+    "Average Packet Size": {
+      "mean": 191.9837,
+      "std": 331.8604,
+      "min": 0.0,
+      "50%": 72.25,
+      "max": 3893.3333
+    },
+    "Avg Fwd Segment Size": {
+      "mean": 58.2019,
+      "std": 186.0912,
+      "min": 0.0,
+      "50%": 34.0,
+      "max": 5940.8569
+    },
+    "Avg Bwd Segment Size": {
+      "mean": 305.9493,
+      "std": 605.2568,
+      "min": 0.0,
+      "50%": 72.0,
+      "max": 5800.5
+    },
+    "Fwd Avg Bytes/Bulk": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 0.0
+    },
+    "Fwd Avg Packets/Bulk": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 0.0
+    },
+    "Fwd Avg Bulk Rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 0.0
+    },
+    "Bwd Avg Bytes/Bulk": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 0.0
+    },
+    "Bwd Avg Packets/Bulk": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 0.0
+    },
+    "Bwd Avg Bulk Rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 0.0
+    },
+    "Subflow Fwd Packets": {
+      "mean": 9.3612,
+      "std": 749.6728,
+      "min": 1.0,
+      "50%": 2.0,
+      "max": 219759.0
+    },
+    "Subflow Fwd Bytes": {
+      "mean": 549.2919,
+      "std": 9980.0703,
+      "min": 0.0,
+      "50%": 62.0,
+      "max": 12870338.0
+    },
+    "Subflow Bwd Packets": {
+      "mean": 10.3938,
+      "std": 997.3883,
+      "min": 0.0,
+      "50%": 2.0,
+      "max": 291922.0
+    },
+    "Subflow Bwd Bytes": {
+      "mean": 16162.3027,
+      "std": 2263057.25,
+      "min": 0.0,
+      "50%": 123.0,
+      "max": 655453056.0
+    },
+    "Init_Win_bytes_forward": {
+      "mean": 6989.8369,
+      "std": 14338.7256,
+      "min": -1.0,
+      "50%": 251.0,
+      "max": 65535.0
+    },
+    "Init_Win_bytes_backward": {
+      "mean": 1989.433,
+      "std": 8456.8828,
+      "min": -1.0,
+      "50%": -1.0,
+      "max": 65535.0
+    },
+    "act_data_pkt_fwd": {
+      "mean": 5.4182,
+      "std": 636.4257,
+      "min": 0.0,
+      "50%": 1.0,
+      "max": 213557.0
+    },
+    "min_seg_size_forward": {
+      "mean": -2741.688,
+      "std": 1084989.375,
+      "min": -536870656.0,
+      "50%": 24.0,
+      "max": 138.0
+    },
+    "Active Mean": {
+      "mean": 81551.3203,
+      "std": 648599.9375,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 110000000.0
+    },
+    "Active Std": {
+      "mean": 41134.1211,
+      "std": 393381.5,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 74200000.0
+    },
+    "Active Max": {
+      "mean": 153182.5156,
+      "std": 1025824.9375,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 110000000.0
+    },
+    "Active Min": {
+      "mean": 58295.8203,
+      "std": 577092.3125,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 110000000.0
+    },
+    "Idle Mean": {
+      "mean": 8316037.5,
+      "std": 23630078.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 120000000.0
+    },
+    "Idle Std": {
+      "mean": 503843.9062,
+      "std": 4602984.5,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 76900000.0
+    },
+    "Idle Max": {
+      "mean": 8695752.0,
+      "std": 24366888.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 120000000.0
+    },
+    "Idle Min": {
+      "mean": 7920031.0,
+      "std": 23363418.0,
+      "min": 0.0,
+      "50%": 0.0,
+      "max": 120000000.0
+    }
+  }
+}

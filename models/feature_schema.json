@@ -1,0 +1,266 @@
+{
+  "features": [
+    "Packet Length Variance",
+    "Bwd Packet Length Std",
+    "Bwd Packet Length Mean",
+    "Average Packet Size",
+    "Packet Length Std",
+    "Bwd Packet Length Max",
+    "Avg Bwd Segment Size",
+    "Packet Length Mean",
+    "Fwd IAT Max",
+    "Init_Win_bytes_backward",
+    "Max Packet Length",
+    "Total Length of Bwd Packets",
+    "Fwd IAT Std",
+    "Init_Win_bytes_forward",
+    "PSH Flag Count",
+    "Subflow Fwd Bytes",
+    "Subflow Bwd Bytes",
+    "Avg Fwd Segment Size",
+    "Fwd Packet Length Mean",
+    "Fwd Header Length",
+    "min_seg_size_forward",
+    "Total Fwd Packets",
+    "Fwd IAT Min",
+    "Total Length of Fwd Packets",
+    "Flow Duration",
+    "Subflow Fwd Packets",
+    "Fwd Packet Length Max",
+    "Flow Bytes/s",
+    "Total Backward Packets",
+    "Fwd IAT Mean"
+  ],
+  "dtype": "float (numeric); inf treated as missing; missing imputed with training median",
+  "positive_class": "ATTACK",
+  "class_mapping": {
+    "0": "BENIGN",
+    "1": "ATTACK"
+  },
+  "excluded_features": [
+    "Destination Port"
+  ],
+  "training_feature_stats": {
+    "Packet Length Variance": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 1055.199951171875,
+      "p99": 9563780.899999995,
+      "max": 22400000.0
+    },
+    "Bwd Packet Length Std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 0.0,
+      "p99": 4413.2021484375,
+      "max": 8194.66015625
+    },
+    "Bwd Packet Length Mean": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 89.0,
+      "p99": 2898.75,
+      "max": 5800.5
+    },
+    "Average Packet Size": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 81.25,
+      "p99": 1454.125,
+      "max": 3893.333251953125
+    },
+    "Packet Length Std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 32.48384094238281,
+      "p99": 3092.5363330078117,
+      "max": 4731.5224609375
+    },
+    "Bwd Packet Length Max": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 98.0,
+      "p99": 10135.0,
+      "max": 17376.0
+    },
+    "Avg Bwd Segment Size": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 89.0,
+      "p99": 2898.75,
+      "max": 5800.5
+    },
+    "Packet Length Mean": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 63.79999923706055,
+      "p99": 1292.5555419921875,
+      "max": 3337.142822265625
+    },
+    "Fwd IAT Max": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 49.0,
+      "p99": 100000000.0,
+      "max": 120000000.0
+    },
+    "Init_Win_bytes_backward": {
+      "min": -1.0,
+      "p01": -1.0,
+      "median": 0.0,
+      "p99": 48180.0,
+      "max": 65535.0
+    },
+    "Max Packet Length": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 103.0,
+      "p99": 10135.0,
+      "max": 24820.0
+    },
+    "Total Length of Bwd Packets": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 157.0,
+      "p99": 82709.52999999933,
+      "max": 655453056.0
+    },
+    "Fwd IAT Std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 0.0,
+      "p99": 44500000.0,
+      "max": 84602928.0
+    },
+    "Init_Win_bytes_forward": {
+      "min": -1.0,
+      "p01": -1.0,
+      "median": 251.0,
+      "p99": 65535.0,
+      "max": 65535.0
+    },
+    "PSH Flag Count": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 0.0,
+      "p99": 1.0,
+      "max": 1.0
+    },
+    "Subflow Fwd Bytes": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 66.0,
+      "p99": 11607.0,
+      "max": 12870338.0
+    },
+    "Subflow Bwd Bytes": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 157.0,
+      "p99": 82709.52999999933,
+      "max": 655453056.0
+    },
+    "Avg Fwd Segment Size": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 36.095237731933594,
+      "p99": 1326.4666748046875,
+      "max": 5940.85693359375
+    },
+    "Fwd Packet Length Mean": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 36.095237731933594,
+      "p99": 1326.4666748046875,
+      "max": 5940.85693359375
+    },
+    "Fwd Header Length": {
+      "min": -32212234240.0,
+      "p01": 20.0,
+      "median": 64.0,
+      "p99": 1404.0,
+      "max": 4644908.0
+    },
+    "min_seg_size_forward": {
+      "min": -536870656.0,
+      "p01": 20.0,
+      "median": 20.0,
+      "p99": 40.0,
+      "max": 138.0
+    },
+    "Total Fwd Packets": {
+      "min": 1.0,
+      "p01": 1.0,
+      "median": 2.0,
+      "p99": 52.0,
+      "max": 219759.0
+    },
+    "Fwd IAT Min": {
+      "min": -8.0,
+      "p01": 0.0,
+      "median": 3.0,
+      "p99": 61971371.79999883,
+      "max": 120000000.0
+    },
+    "Total Length of Fwd Packets": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 66.0,
+      "p99": 11607.0,
+      "max": 12900000.0
+    },
+    "Flow Duration": {
+      "min": -13.0,
+      "p01": 3.0,
+      "median": 51774.0,
+      "p99": 117921174.8,
+      "max": 120000000.0
+    },
+    "Subflow Fwd Packets": {
+      "min": 1.0,
+      "p01": 1.0,
+      "median": 2.0,
+      "p99": 52.0,
+      "max": 219759.0
+    },
+    "Fwd Packet Length Max": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 40.0,
+      "p99": 3432.1699999999255,
+      "max": 24820.0
+    },
+    "Flow Bytes/s": {
+      "min": -261000000.0,
+      "p01": 0.0,
+      "median": 3609.384521484375,
+      "p99": 12333333.0,
+      "max": 2071000064.0
+    },
+    "Total Backward Packets": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 2.0,
+      "p99": 63.0,
+      "max": 291922.0
+    },
+    "Fwd IAT Mean": {
+      "min": 0.0,
+      "p01": 0.0,
+      "median": 49.0,
+      "p99": 61971371.79999883,
+      "max": 120000000.0
+    }
+  },
+  "families": [
+    "BENIGN",
+    "Bot",
+    "BruteForce",
+    "DDoS",
+    "DoS",
+    "Heartbleed",
+    "Infiltration",
+    "PortScan",
+    "WebAttack"
+  ]
+}

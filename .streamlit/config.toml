@@ -1,0 +1,24 @@
+[theme]
+base = "dark"
+primaryColor = "#3DDBA8"
+backgroundColor = "#0A1520"
+secondaryBackgroundColor = "#101E2C"
+textColor = "#DDE7F0"
+borderColor = "#1E3246"
+linkColor = "#6CC6F5"
+baseRadius = "6px"
+
+[theme.sidebar]
+backgroundColor = "#0D1A27"
+secondaryBackgroundColor = "#152738"
+borderColor = "#1E3246"
+
+[client]
+toolbarMode = "viewer"
+
+[server]
+maxUploadSize = 200
+headless = true
+
+[browser]
+gatherUsageStats = false
